@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GDSC AITR</title>
+
+	<link rel="icon" type="image/x-icon" href="images/gd_dsc.png">
+
+	<link rel="stylesheet" type="text/css" href="stars.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="Js/index.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+
+	<link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+	<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+	<!-- Import typed.min.js file from typed.js folder -->
+	<script src="./typed.js-master/lib/typed.min.js">
+	</script>
+
+	<!-- Add jquery cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+</head>
+
+<body id="bod">
+
+	<!-- 
+	<br>
+	<br style="line-height:500px;">
+	<br>
+	<br>
+	<br>
+		<br>
+		<br>
+		<br>
+		<br> -->
+
+	<div class="scene">
+
+
+		<nav class="navbar navbar-light bg-light fixed-top navbar-expand-lg  navbar-center">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><img src="images/gd_dsc.png">GDSC AITR</a>
+				<button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse  navbar-center" id="navbarNavDropdown">
+					<ul class="navbar-nav navv">
+						 <li class="nav-item">
+            <a class="nav-link home" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="index.html#abt">ABOUT</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="events.html">EVENTS</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="team.html">TEAM</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " href="index.html#contact">CONTACT</a>
+            </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="cursor"></div>
+
+		<script>
+			var cursor = document.querySelector(".cursor");
+			document.addEventListener("mousemove", function(e){
+				cursor.style.cssText = "left:" + e.clientX + "px; top:" + e.clientY + "px;";
+			});
+		</script>
+		<!-- 
+<div class="above">
+	<br>
+	<br>
+	<br>
+</div> -->
+
+		<div class="semi">
+
+			<img src="images/gd_dsc.png" id="imgsemi">
+			<!-- <img src="images/gd_dsc.png" style="height: 150px;padding-left: 30%;opacity: 1; z-index: 1;"> -->
+			<br>
+			<div class="text-center head sem">
+				<h1 class="typed">Google Developer Student Clubs</h1>
+				<h2 class="over acro">Acropolis Institute Of Technology And Research</h2>
+				<span>A place to </span>
+				<span class="text-slider-items">
+					learn., explore., find opportunities.
+				</span>
+				<span class="text-slider"></span>
+				<p>
+					Our Vision is to learn, share and grow as a vibrant technical community that comes together to build
+					technical solutions to real world problems. At GDSC, we believe in bridging the gap between
+					Technologies and Students.
+				</p>
+				<a class="chapter" href="https://gdsc.community.dev/acropolis-institute-of-technology-research-indore/"
+					target="_blank">GDSC Chapter
+				</a>
+			</div>
+
+		</div>
+		<!-- </div> -->
+
+
+
+
+<!-- 
+		<script type="text/javascript">
+			function stars() {
+				let count = 2000;
+				let scene = document.querySelector('.scene');
+				let i = 0;
+				while (i < count) {
+					let star = document.createElement("i");
+					let x = Math.floor(Math.random() * scene.clientWidth);
+					let y = Math.floor(Math.random() * scene.clientHeight);
+					console.log(x, y);
+					let duration = Math.random() * 10;
+					let size = Math.random() * 3;
+
+					star.style.left = x + 'px';
+					star.style.top = y + 'px';
+					star.style.width = 1 + size + 'px';
+					star.style.height = 1 + size + 'px';
+
+					star.style.animationDuration = 5 + duration + 's';
+					star.style.animationDelay = duration + 's';
+
+					scene.appendChild(star);
+					i++;
+				}
+			}
+			stars();
+		</script> -->
+
+
+
+
+
+
+
+		<!-- <h1 class="text-center all">ABOUT</h1> -->
+		<!-- <div class="extr1"> -->
+
+		<br>
+		<br>
+
+		<section id="abt">
+
+			<!-- <hr> -->
+
+			<h1 class="text-center all hh headings">ABOUT US</h1>
+
+			<!-- <hr> -->
+
+			<br>
+			<br>
+			<br>
+
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-1"></div>
+				<div class="col-lg-8 col-md-8 col-sm-8 col-10 about" style="padding: 30px 30px;">
+
+					We at GDSC AITR are aimed at inspiring and training students who will encourage other students
+					to learn newer areas of technologies that will equip them with the right skill sets as they step out
+					of colleges to join the workforce. Continuing to broaden the access to world-class technology
+					curricula and giving the large Indian student community a head start on latest technologies like
+					Machine Learning, Artificial Intelligence and Mobile & Web Development, Cloud services, we are
+					delighted to kick off the Google Developer Student Club at AITR!
+					Students are profoundly welcomed to engage with us.
+					<iframe src="https://embed.lottiefiles.com/animation/77349" class="remove" id="abouti"></iframe>
+					<!-- <iframe src="https://embed.lottiefiles.com/animation/81450" id="abouti"></iframe> -->
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-1"></div>
+			</div>
+
+
+		</section>
+
+
+
+		<section id="prin">
+
+
+			<!-- <hr> -->
+			<div class="section-title" data-aos="fade-up">
+				<h2 class="over">Principles</h2>
+				<h1 class="text-center all headings hh">The Working of GDSC AITR</h1>
+			</div>
+			<!-- <div class="hh text-center" data-aos="fade-up">
+				<h2 class="over">Principles</h2>
+				<p>The Working of GDSCAcropolis</p>
+			</div> -->
+
+			<!-- <hr> -->
+
+			<br>
+			<br>
+			<br>
+
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-2 col-1"></div>
+				<div class="col-lg-6 col-md-6 col-sm-8 col-10 about">
+					<h1 class="text-center">Concept</h1>
+					The GDSC program is a grassroots channel through which Google provides development skills for
+					students, towards employability.
+					<iframe src="https://embed.lottiefiles.com/animation/54539" class="prini remove"></iframe>
+					<!-- <iframe src="https://embed.lottiefiles.com/animation/52139" class="prini"></iframe> -->
+					<!-- <iframe src="https://embed.lottiefiles.com/animation/81450" id="abouti"></iframe> -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-2 col-1"></div>
+			</div>
+
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-2 col-1"></div>
+				<div class="col-lg-6 col-md-6 col-sm-8 col-10 about">
+					<h1 class="text-center">Means</h1>
+					For students to learn development skills, solve problems through technology and inspire them to be
+					world class developers and changemakers.
+					<iframe src="https://embed.lottiefiles.com/animation/23844" class="prini remove"></iframe>
+					<!-- <iframe src="https://embed.lottiefiles.com/animation/77349" class="prini"></iframe> -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-2 col-1"></div>
+			</div>
+
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-2 col-1"></div>
+				<div class="col-lg-6 col-md-6 col-sm-8 col-10 about">
+					<h1 class="text-center">Goal</h1>
+					GDSC activities are targeted at University students and any others including faculty members who
+					want to learn development skills.
+					<iframe src="https://embed.lottiefiles.com/animation/56091" class="prini remove"></iframe>
+
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-2 col-1"></div>
+			</div>
+
+
+			<br>
+			<br>
+			<br>
+		</section>
+
+
+		<!-- ======= Services Section ======= -->
+		<section id="services" class="services section-bg" >
+			<!--<div class="container">
+
+		<div class="hh" data-aos="fade-up">
+			<h2 class="over">Also..</h2>
+			<p>Do Check Out</p>
+		</div>
+		<br>
+		<br>
+
+		<div class="row">
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+				<div class="icon-box">
+					<div class="icon"><i class="bx bxl-dribbble"></i></div>
+					<h4 class="title"><a href="">Concept</a></h4>
+					<p class="description">The GDSC program is a grassroots channel through which Google provides development skills for students, towards employability.</p>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+				<div class="icon-box">
+					<div class="icon"><i class="bx bx-file"></i></div>
+					<br>
+					<h4 class="title"><a href="">Means</a></h4>
+					<p class="description">For students to learn development skills, solve problems through technology and inspire them to be world class developers and changemakers.</p>
+				</div>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="400">
+				<div class="icon-box">
+					<div class="icon"><i class="bx bx-world"></i></div>
+					<h4 class="title"><a href="">Surrounded</a></h4>
+					<p class="description">GDSC activities are targeted at University students and any others including faculty members who want to learn development skills</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+-->
+
+			<div class="hh text-center" data-aos="fade-up">
+				<!-- <h2 class="over">Also..</h2> -->
+				<h1 class="headings hh">Take A Community Tour</h1>
+			</div>
+			<div class="container over">
+
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2 class="over">01</h2>
+							<h3 class="over">Events</h3>
+							<p>Here at GDSC AITR, we put the fun in functions and events.
+								We organize many events and workshops such as Study Jams/ Hackathons/ Developer
+								Conferences to learn more about the latest technologies and trends of the tech world.
+							</p>
+							<a href="events.html">More Details</a>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2 class="over">02</h2>
+							<h3 class="over">Gallery</h3>
+							<p>Glimpse carry the captures of the moments that we witnessed during our journey with GDSC AITR. Here are some paused moments from our events and workshops.  Experience our galaxy of our GDSC AITR.</p>
+							<a href="gallery.html">More Details</a>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<h2 class="over">03</h2>
+							<h3 class="over">Team</h3>
+							<p>Collaboration within a team can help solve difficult problems. Brainstorming is a good
+								opportunity for the team to exchange ideas and come up with creative ways of doing
+								things. By working together, teams can find the solutions that work best.</p>
+							<a href="team.html">More Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- End Services Section -->
+
+
+
+		<!-- Contact us -->
+
+		<section class="contact over" id="contact" >
+			<br>
+			<h1 class="text-center all hh headings">CONTACT US</h1>
+
+
+			<br><br>
+
+			<div class="map ">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.4916603324777!2d75.94096541491544!3d22.821292585055414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631cf455b4cec3%3A0x426141aa8141f7a5!2sAcropolis%20Institute%20Of%20Technology%20And%20Research%20-%20AITR!5e0!3m2!1sen!2sin!4v1638085453468!5m2!1sen!2sin"
+					width="100%" height="300" style="border:0;"></iframe>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row shift">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-5 white" data-aos="fade-up" data-aos-delay="100">
+					<i class="icofont-google-map"></i>
+					<h4 class="over">Location:</h4>
+					<p>
+						Bypass Rd Behind, Square,<br> Malwa County, Manglaya Sadak,<br> Indore, Madhya Pradesh 453771
+						<br><br>
+
+					</p>
+				</div>
+
+				<div class="email white col-lg-4">
+					<i class="icofont-envelope"></i>
+					<h4 class="over">Email:</h4>
+					<p>dscaitr@gmail.com</p>
+				</div>
+				<div class="col-lg-1"></div>
+
+			</div>
+
+
+
+
+		</section>
+		<!-- End Contact us -->
+
+
+
+
+		<br><br><br>
+
+		<!-- ======= F.A.Q Section ======= -->
+		<section id="faq" class="faq">
+
+			<div class="section-title" data-aos="fade-up">
+				<h2 class="over">F.A.Q.</h2>
+				<h1 class="text-center all white headings">FREQUENTLY ASKED QUESTIONS</h1>
+			</div>
+
+			<br><br>
+			<div class="faq_area " id="faq">
+				<div class="container-fluid">
+
+					<div class="row justify-content-center">
+						<!-- FAQ Area-->
+						<div class="col-12 col-sm-10 col-lg-8">
+							<div class="accordion faq-accordian" id="faqAccordion">
+								<div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+									style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+									<div class="card-header" id="headingOne">
+										<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne"
+											aria-expanded="true" aria-controls="collapseOne">Being a part of Google DSC program, what are the opportunities that come your way?<span class="lni-chevron-up"></span></h6>
+									</div>
+									<div class="collapse show" id="collapseOne" aria-labelledby="headingOne"
+										data-parent="#faqAccordion">
+										<div class="card-body">
+											<p>
+												• Grow your knowledge of developer technologies through dedicated workshops and events.
+												<br> • Gain industry experience by developing technology-based solutions to solve your local organization’s problems.
+												<br> • Get exposure by showcasing your solutions or prototypes to your community and industry leaders.
+				
+				
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="card border-0 wow fadeInUp" data-wow-delay="0.3s"
+									style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+									<div class="card-header" id="headingTwo">
+										<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo"
+											aria-expanded="true" aria-controls="collapseTwo">What we do?<span class="lni-chevron-up"></span></h6>
+									</div>
+									<div class="collapse" id="collapseTwo" aria-labelledby="headingTwo"
+										data-parent="#faqAccordion">
+										<div class="card-body">
+											<p>GDSC AITR conducts workshops, seminars helping to bridge the gap between students and technologies. In addition to workshops, GDSC AITR also provides an opportunity for students to apply their newly gained skills to develop solutions for local organizations and then provide visibility via showcases. From learning about new technologies with materials provided by Google Developers to attending talks, events, DevFests and connecting with developers around the world, GDSC will help the students get it.</p>
+										</div>
+									</div>
+								</div>
+								<div class="card border-0 wow fadeInUp" data-wow-delay="0.4s"
+									style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+									<div class="card-header" id="headingThree">
+										<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree"
+											aria-expanded="true" aria-controls="collapseThree">What are the advantages of being a Member ?<span class="lni-chevron-up"></span></h6>
+									</div>
+									<div class="collapse" id="collapseThree" aria-labelledby="headingThree"
+										data-parent="#faqAccordion">
+										<div class="card-body">
+											<p>
+												1. Core Members will select people for any projects from the Members of the club.<br> 2. Any information related to opportunities that we have, like some nominations for internships, will be rolled out to the members.<br>                                3. Active Members will be preferred for the selection as Core Members.<br> 4. Members get certificates and recognition if they do handle responsibilities during the events, workshops or projects.<br> 5. Networking with
+												members from various GDSC’s across the globe.<br>
+				
+				
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="card border-0 wow fadeInUp" data-wow-delay="0.4s"
+									style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+									<div class="card-header" id="headingFour">
+										<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFour"
+											aria-expanded="true" aria-controls="collapseFour">Eligibility to become a GDSC Lead<span class="lni-chevron-up"></span></h6>
+									</div>
+									<div class="collapse " id="collapseFour" aria-labelledby="headingFour"
+										data-parent="#faqAccordion">
+										<div class="card-body ">
+											<p>
+												Being a Google DSC Lead, you are supposed to <br> • Enrolled in an undergraduate program at a college or university<br> • Minimum two years left until graduation<br> • Commit a one year for the program<br> • Passionate
+												student leaders who are excited about technology and to create an impact in the community<br> • Have experience in training technology things to fellow students or through communities<br> • Be already active in other communities
+												or technical clubs<br>
+				
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="card border-0 wow fadeInUp" data-wow-delay="0.4s"
+									style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+									<div class="card-header" id="headingFive">
+										<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFive"
+											aria-expanded="true" aria-controls="collapseFive">Benefits of Being a GDSC Lead?<span class="lni-chevron-up"></span></h6>
+									</div>
+									<div class="collapse" id="collapseFive" aria-labelledby="headingFive"
+										data-parent="#faqAccordion">
+										<div class="card-body">
+											<p>
+												• Access to Google Developer resources and opportunities for free<br> • Lead a community under direct mentorship from Google<br> • Chance to grow personal and professional network<br> • Building real-life solution s to
+												local problems in your community<br> • Awesome swags and goodies<br> • Get invitations for fully funded travelling opportunities to various events<br> • Be recognized as a collaborator with Google Developers<br>
+				
+				
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Support Button-->
+							<!-- <div class="support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <i class="lni-emoji-sad"></i>
+                    <p class="mb-0 px-2">Can't find your answers?</p>
+                    <a href="#"> Contact us</a>
+                </div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End F.A.Q Section -->
+
+
+
+
+
+
+
+
+	</div>
+	<!-- Scene ends -->
+
+
+
+<!-- Loading screen----------------------------------------------- -->
+
+<div class="loader">
+	<iframe src="https://embed.lottiefiles.com/animation/68689" class="cute"></iframe>
+</div>
+
+<script>
+window.addEventListener("load", function () {
+	const loader = document.querySelector(".loader");
+
+	setTimeout(function(){ loader.className += " hidden"; }, 3000);  // class "loader hidden"
+
+});
+</script>
+
+<!-- Loading screen ends----------------------------------------------- -->
+
+
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+	<!-- scroll button code  -->
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+
+	<!-- Footer Starts -->
+
+	<footer>
+		<div class="footer-wrap">
+			<div class="container first_class">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<h3>BE THE FIRST TO KNOW </h3>
+						<p>To be a part of the GDSC AITR's fun journey follow us on our Social Media Platforms and stay updated about our events and workshops.</p>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<form class="newsletter">
+							<a href="index.html"><img src="images/gdscw.png" alt="GDSC Logo" class="ns"></a>
+							<!-- <input type="text" placeholder="Email Address">  -->
+							<!-- <button class="newsletter_submit_btn" type="submit"><i class="fa fa-paper-plane"></i></button>	 -->
+						</form>
+
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="col-md-12">
+							<div class="standard_social_links">
+								<div>
+									<li class="round-btn btn-facebook"><a href="https://www.facebook.com/dscacropolis/"
+											target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+									</li>
+									<li class="round-btn btn-linkedin"><a href="https://www.linkedin.com/in/dsc-aitr"
+											target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+
+									</li>
+									<li class="round-btn btn-twitter"><a href="https://twitter.com/GDSCAITR?t=ie3iwAjjTxcthyPXGu1ivQ&s=08"
+											target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+
+									</li>
+									<li class="round-btn btn-instagram"><a
+											href="https://www.instagram.com/gdscaitr/"
+											target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+
+									</li>
+									<li class="round-btn btn-discord"><a href="https://discord.gg/4AAXF8Zutb"
+											target="_blank"><i class="fab fa-discord" aria-hidden="true"></i></a>
+
+									</li>
+									<li class="round-btn btn-youtube"><a
+											href="https://youtube.com/channel/UClUOVI3vsQO5zmPdrLrI7Vw"
+											target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+
+									</li>
+									<!-- <li class="round-btn btn-whatsapp"><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+
+					</li> -->
+									<li class="round-btn btn-envelop"><a href="mailto: dscaitr@gmail.com"
+											target="_blank"><i class="far fa-envelope" aria-hidden="true"></i></a>
+
+									</li>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-md-12">
+							<h3 style="text-align: right;">Stay Connected</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="second_class">
+				<div class="container second_class_bdr">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+
+							<!-- <iframe src="https://embed.lottiefiles.com/animation/39997" class="text-center"
+								style="border: none;height: 250px;width: 300px;"></iframe> -->
+
+								<iframe src="https://embed.lottiefiles.com/animation/76817" class="text-center"
+								style="border: none;height: 250px;width: 300px; "></iframe>
+
+							<!-- <iframe src="https://embed.lottiefiles.com/animation/45056" style="border: none;height: 250px;width: 300px; padding-left: 20%;"></iframe> -->
+						</div>
+						<div class="col-md-2 col-sm-6">
+							<h3>Quick Links</h3>
+							<ul class="footer-links">
+								<li><a href="index.html">Home</a>
+								</li>
+								<li><a href="index.html#abt">About us</a>
+								</li>
+								<li><a href="events.html">Events</a>
+								</li>
+								<li><a href="gallery.html">Gallery</a>
+								</li>
+								<li><a href="team.html">Team</a>
+								</li>
+								<li><a href="index.html#contact">Contact Us</a>
+								</li>
+								<li><a href="https://gdsc.community.dev/acropolis-institute-of-technology-research-indore/">GDSC Chapter</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<h3>Collaborations</h3>
+							<ul class="footer-category">
+								<li><a href="https://gdsc.community.dev/events/details/developer-student-clubs-acropolis-institute-of-technology-research-indore-presents-octahacks-40/">Octahacks 4.0</a>
+								</li>
+								<li><a href="https://gdsc.community.dev/events/details/developer-student-clubs-acropolis-institute-of-technology-research-indore-presents-hacknitr-30-collobration-event/">HackNITR 3.0 </a>
+								</li>
+								<li><a href="https://gdsc.community.dev/events/details/developer-student-clubs-sies-graduate-school-of-technology-presents-dsc-wow-indias-biggest-collaboration-prizes-worth-10-lakhs/">GDSC WOW </a>
+								</li>
+								<li><a href="https://gdg.community.dev/events/details/google-gdg-new-delhi-presents-devfest-india-2021/">Devfest</a>
+								</li>
+								<li><a href="https://gdsc.community.dev/events/details/developer-student-clubs-superior-gold-campus-presents-android-study-jam/">Android Jam</a>
+								</li>
+								<li><a href="https://gdsc.community.dev/events/details/developer-student-clubs-indian-institute-of-information-technology-vadodara-presents-women-in-tech/">GDSC Wo(men)-In-Tech </a>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<h3>Designed & Developed By</h3>
+							<ul class="footer-links">
+								<li><a href="https://www.linkedin.com/in/khushigandhi27">Khushi Gandhi</a>
+								</li>
+								<li><a href="https://www.linkedin.com/in/nitinshukla22">Nitin Kumar Shukla </a>
+								</li>
+								<li><a href="https://www.linkedin.com/in/27-ayush-pawar">Ayush Pawar </a>
+								</li>
+								<li><a href="https://www.linkedin.com/in/vaibhav-rathore-6277951aa">Vaibhav Rathore</a>
+								</li>
+								<li><a href="https://www.linkedin.com/in/moheshaa-bajpai-9479311a9">Moheshaa Bajpai</a>
+								</li>
+								<li><a href="https://www.linkedin.com/in/sanidhya-jain-769502193">Sanidhya Jain</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="container-fluid">
+					<div class="copyright">©Copyright | All Rights Reserved by GDSC AITR.</div>
+				</div>
+
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- Footer Ends -->
+
+
+
+
+
+	<script>
+		if ($(".text-slider").length == 1) {
+
+			var typed_strings =
+				$(".text-slider-items").text();
+
+			var typed = new Typed(".text-slider", {
+				strings: typed_strings.split(", "),
+				typeSpeed: 50,
+				loop: true,
+				backDelay: 900,
+				backSpeed: 30,
+			});
+		}
+	</script>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<!-- Font Awesome 5 links-->
+	<script src="https://kit.fontawesome.com/fddf5c0916.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

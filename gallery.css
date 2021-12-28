@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@100;200;300;400;500&family=Readex+Pro:wght@200;300;400;500;600&display=swap');
+
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;	
+	font-family: 'Poppins', sans-serif;
+}
+body,html{
+	/* overflow: hidden; */
+	background-color:black;
+	width: 100%;
+	height:100vh;
+	background-image: url('images/website-04.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	scroll-behavior: smooth;
+}
+
+.vertical-center {
+	margin-top:17%;
+   }
+   .white{
+   color:white;
+   }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #4551be; 
+    padding: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5864ce; 
+  }
+
+  
+/* 
+nav{
+	z-index: 0;
+	height: 55px;
+}  */
+
+nav ul{
+    text-align: center;
+}
+
+.nav-item{
+    width: 150px;
+    padding: 0 2% 0 2%;
+    color: #020732;
+}
+.navbar-brand{
+   width: 550px;
+}
+.navbar-brand img{
+    width: 50px;
+	padding: 0;
+	height: 20px;
+}
+.nav-item.home{
+    padding: 0 50px 0 0;
+}
+nav img{
+	z-index: 0;
+}
+.container{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+	width: 1200px;
+	height: 800px;
+	margin-top: 100px;
+	/*
+	width: 80%;
+	height: 100vh;
+	border :1px solid white; */
+}
+
+.canvas{
+	position: absolute;
+	left:0;
+	top:0;
+	transform: translate(-600px,-600px);
+	width:200%;
+	height:auto;
+	padding: 200px;
+	transition: 2s ease-out;
+	display:flex;
+	padding-bottom: 500px;
+	/* background-image: url('images/website-06.png'); */
+
+}
+.column{
+	position:relative;
+	flex:25%;
+
+}
+img{
+	width:430px;
+	/* filter: grayscale(100%); */
+	padding: 4rem;
+	transition: 0.5s ease-in-out;
+	
+}
+
+img:hover{
+	transform: scale(1.2);
+}
+
+@media(max-width:650px){
+    div .semi{
+        height: 100;
+        border-radius: 10;
+    }
+.navbar-brand{
+    width: 190px;
+ }
+.navbar-toggler{
+padding: 0rem 0rem !important;
+}
+ /* img{
+	width:450px;
+	
+} */
+body,html{
+	height: 120vh;
+}
+.container{
+	overflow-x:scroll;
+}
+}
+
+.right-col{
+	position: fixed;
+	bottom:65px;
+	margin-left: 10px;
+	/* background-image: url("images/play.png"); */
+
+
+}
+button{
+	height: 30px;
+	width:30px;
+	background-size: 100%; /* To fill the dimensions of container (button), or */
+  	background-size: 30px auto; /* to specify dimensions explicitly */
+	  background-color: transparent;
+	  border: none;
+}
+#icon{
+	width:80px;
+	cursor:pointer;
+	
+}
+
+.bot{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 450px;
+	width: 450px;
+	overflow: hidden;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+.arrow{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 400px;
+	width: 450px;
+	overflow: hidden;
+	padding-left: 20px;
+	padding-bottom: 30px;
+}
+
+.bot:hover{
+	transform: none;
+}
+.arrow:hover{
+	transform: none;
+}
+
+@-webkit-keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+   }
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+   }
+}
+@keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+   }
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+   }
+}
+.ticker-wrap {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 4rem;
+	background-color: #08080a;
+	padding-left: 100%;
+	box-sizing: content-box;
+}
+.ticker-wrap .ticker {
+	display: inline-block;
+	height: 4rem;
+	line-height: 4rem;
+	white-space: nowrap;
+	padding-right: 100%;
+	box-sizing: content-box;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-name: ticker;
+	animation-name: ticker;
+	-webkit-animation-duration: 30s;
+	animation-duration: 30s;
+}
+.ticker-wrap .ticker__item {
+	display: inline-block;
+	padding: 0 2rem;
+	font-size: 2rem;
+	color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/* ******************************************************** */
+.toggle {
+	display: block;
+	text-align: center;
+	margin-top: 40px;
+	user-select: none;
+	color: #fff;
+}
+.toggle--checkbox {
+	display: none;
+}
+.toggle--btn {
+	display: block;
+	margin: 0 auto;
+	font-size: 1.4em;
+	transition: all 350ms ease-in;
+}
+.toggle--btn:hover {
+	cursor: pointer;
+}
+.toggle--btn, .toggle--checkbox, .toggle--feature, .toggle--btn:before, .toggle--checkbox:before, .toggle--feature:before, .toggle--btn:after, .toggle--checkbox:after, .toggle--feature:after {
+	transition: all 250ms ease-in;
+}
+.toggle--btn:before, .toggle--checkbox:before, .toggle--feature:before, .toggle--btn:after, .toggle--checkbox:after, .toggle--feature:after {
+	content: '';
+	display: block;
+}
+/* =================================================== Day/Night and Gender toggle buttons =================================================== */
+.toggle--daynight .toggle--btn, .toggle--like .toggle--btn {
+	position: relative;
+	height: 40px;
+	width: 70px;
+	border-radius: 70px;
+}
+.toggle--daynight .toggle--btn:before, .toggle--like .toggle--btn:before {
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+}
+.toggle--daynight .toggle--btn {
+	border: 5px solid #1c1c1c;
+	background-color: #3c4145;
+}
+.toggle--daynight .toggle--btn:before {
+	background-image: url("./images/website-03.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+	background-color: white;
+	
+}
+
+
+.toggle--daynight .toggle--checkbox:checked + .toggle--btn {
+
+	background-color: #3c4145;	border: 5px solid #1c1c1c;
+}
+.toggle--daynight .toggle--checkbox:checked + .toggle--btn:before {
+	left: 29px;
+	background-image: url("./images/play_new.png");
+	background-size: 100%;
+}
+
+.toggle--daynight .toggle--checkbox:checked + .toggle--btn > .toggle--feature {
+	opacity: 0;
+	/* box-shadow: rgba(255, 255, 255, 0.1) 30px -3px 0 -4px, rgba(255, 255, 255, 0.1) 12px 10px 0 -5px, #fff 38px 18px 0 -3px, rgba(255, 255, 255, 0.1) 32px 34px 0 -4px, #fff 20px 24px 0 -5.5px, rgba(255, 255, 255, 0.1) 5px 38px 0 -3px; */
+	animation: none;
+}
+.toggle--daynight .toggle--checkbox:checked + .toggle--btn > .toggle--feature:before {
+	left: 25px;
+	transform: rotate(70deg);
+}
+/* ================================================== Like specific styling ================================================== */
+.toggle--like {
+	position: relative;
+}
+.toggle--like .toggle--btn {
+	border: 5px solid #0865b0;
+	background-color: #3498db;
+}
+.toggle--like .toggle--btn:before {
+	background-color: #f2dd68;
+	border: 5px solid #e5ce5e;
+}
+
+/* ===================================================== Toggle - knob button style ===================================================== */
+.toggle--knob .toggle--btn {
+	position: relative;
+	width: 120px;
+	height: 40px;
+	font-family: 'PT Sans', Sans Serif;
+	text-transform: uppercase;
+	background: #a4bf4d;
+	box-shadow: inset 0 20px 40px -10px #7b9d25;
+	border-radius: 40px;
+}
+.toggle--knob .toggle--btn:before {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	transform: translateY(-50%);
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	box-shadow: 0 4px 10px 0 #999, inset 0 10px 10px 8px rgba(241, 241, 241, 0.6), inset 0 0 8px 0px #333, inset 0 0 0 13px #ccc, inset 0 0 0 14px #f1f1f1;
+	text-indent: -100%;
+}
+.toggle--knob .toggle--feature {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	height: 40px;
+	text-shadow: 0 1px 2px #666;
+}
+.toggle--knob .toggle--feature:before, .toggle--knob .toggle--feature:after {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.toggle--knob .toggle--feature:before {
+	content: attr(data-label-on);
+	left: 20%;
+}
+.toggle--knob .toggle--feature:after {
+	content: attr(data-label-off);
+	right: -60%;
+}
+/* .toggle--knob .toggle--checkbox:checked + .toggle--btn {
+	background: #a2a2a2;
+	box-shadow: inset 0 20px 40px -10px #7e7e7e;
+} */
+.toggle--knob .toggle--checkbox:checked + .toggle--btn:before {
+	left: 0;
+}
+.toggle--knob .toggle--checkbox:checked + .toggle--btn .toggle--feature:before {
+	left: -60%;
+}
+.toggle--knob .toggle--checkbox:checked + .toggle--btn .toggle--feature:after {
+	right: 20%;
+}
+/* ===================================================== Toggle - switch stylee ===================================================== */
+.toggle--switch .toggle--btn {
+	position: relative;
+	width: 120px;
+	height: 44px;
+	font-family: 'PT Sans', Sans Serif;
+	text-transform: uppercase;
+	background: linear-gradient(90deg, #a4bf4d 0%, #a4bf4d 50%, #ca5046 50%, #ca5046 200%);
+	background-position: -80px 0;
+	background-size: 200% 100%;
+	box-shadow: inset 0 0px 22px -8px #111;
+}
+.toggle--switch .toggle--btn, .toggle--switch .toggle--btn:before {
+	border-radius: 4px;
+}
+.toggle--switch .toggle--btn:before {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 52px;
+	height: 44px;
+	border: 2px solid #202027;
+	background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .15) 100%);
+	background-color: #2b2e3a;
+	background-size: 5px 5px;
+	text-indent: -100%;
+}
+.toggle--switch .toggle--feature {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	height: 44px;
+	text-shadow: 0 1px 2px #666;
+}
+.toggle--switch .toggle--feature:before, .toggle--switch .toggle--feature:after {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.toggle--switch .toggle--feature:before {
+	content: attr(data-label-on);
+	left: -60%;
+}
+.toggle--switch .toggle--feature:after {
+	content: attr(data-label-off);
+	right: 16%;
+}
+.toggle--switch .toggle--checkbox:checked + .toggle--btn {
+	background-position: 0 0;
+}
+.toggle--switch .toggle--checkbox:checked + .toggle--btn:before {
+	left: calc(100% - 52px);
+}
+.toggle--switch .toggle--checkbox:checked + .toggle--btn .toggle--feature:before {
+	left: 20%;
+}
+.toggle--switch .toggle--checkbox:checked + .toggle--btn .toggle--feature:after {
+	right: -60%;
+}
+/* ====================================================== Push button toggle ====================================================== */
+.toggle--push .toggle--btn {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background-color: #f9f8f6;
+	border-radius: 50%;
+	box-shadow: 0 5px 10px 0px #333, 0 15px 20px 0px #ccc;
+}
+.toggle--push .toggle--btn, .toggle--push .toggle--btn:before, .toggle--push .toggle--btn:after {
+	transition-duration: 150ms;
+}
+.toggle--push .toggle--btn:before {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 22.7272727273px;
+	height: 22.7272727273px;
+	border-radius: 50%;
+	background-color: #f90;
+	box-shadow: inset 0 0 0 5px #ccc, inset 0 0 0 14px #f9f8f6;
+}
+.toggle--push .toggle--btn:after {
+	position: absolute;
+	left: 50%;
+	top: 35%;
+	transform: translate(-50%, -50%);
+	width: 4px;
+	height: 12px;
+	background-color: #ccc;
+}
+
+.toggle--push--glow .toggle--checkbox:checked + .toggle--btn {
+	box-shadow: 0 0px 8px 0 #0072ad, 0 0 0 3px #0094e0, 0 0 30px 0 #0094e0, 0 0 0 6px #777;
+}
+
+
+
+
+/* ====================================================== Neon toggle ====================================================== */
+@keyframes neon {
+	0% {
+		text-shadow: 0 0 10px , 0 0 15px , 0 0 25px , 0 0 40px #f90, 0 0 70px #f90, 0 0 90px #f90, 0 0 90px #f90;
+   }
+	100% {
+		text-shadow: 0 0 5px , 0 0 10px , 0 0 15px , 0 0 20px #f90, 0 0 35px #f90, 0 0 40px #f90, 0 0 50px #f90;
+   }
+}
